@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+
+
+    <com.munye.component.MyRaidProBoldTextView
+        android:id="@+id/tvDialogTitle"
+        android:padding="@dimen/margin_10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:textSize="30sp"/>
+
+
+    <View
+        android:layout_marginLeft="@dimen/margin_30dp"
+        android:layout_marginRight="@dimen/margin_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"></View>
+
+    <com.munye.component.MyFontTextView
+        android:id="@+id/tvTitleDialogContent"
+        android:padding="@dimen/margin_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Are you sure?"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.munye.component.MyFontButton
+            android:id="@+id/btnTitleDialogNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:text="NO"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:background="@color/color_button_background"/>
+
+
+        <com.munye.component.MyFontButton
+            android:id="@+id/btnTitleDialogYes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="YES"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:background="@color/color_button_background"/>
+
+    </LinearLayout>
+
+</LinearLayout>

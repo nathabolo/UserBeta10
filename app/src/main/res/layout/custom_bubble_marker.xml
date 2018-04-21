@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.munye.component.MyFontSemiBoldTextView
+        android:id="@+id/tvButtonSetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingRight="@dimen/dimen_bubble_15dp"
+        android:paddingBottom="@dimen/dimen_bubble_12dp"
+        android:textStyle="bold"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_bubble_set_location_font_size"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bubbleLocationPin" />
+
+
+    <ImageView
+        android:id="@+id/bubbleLocationPin"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:paddingBottom="@dimen/dimen_buuble_35dp"
+        android:src="@drawable/location_pin" />
+
+</RelativeLayout>

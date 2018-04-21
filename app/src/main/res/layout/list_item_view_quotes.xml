@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linerLayoutItemViewQuotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_view_quotes_10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgViewQuoteJobIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_view_quotes_10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.munye.component.MyRaidProBoldTextView
+                android:id="@+id/tvViewQuotesJobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_title_view_quotes"
+                android:text="Job Title"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvViewQuotesDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10/01/2017 , 04:15PM"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_description_view_quotes" />
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvViewQuotesDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                android:textSize="@dimen/text_size_description_view_quotes" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_view_quotes_10dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <com.munye.component.MyRaidProTextView
+                android:id="@+id/tvViewQuotesTotalQutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05"
+                android:textColor="@color/color_text_amount_quote"
+                android:textSize="@dimen/text_size_no_quotes_view_quotes" />
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvViewQuotesTextQuotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quotes"
+                android:textColor="@color/color_text_quote_and_pay"
+                android:textSize="@dimen/text_size_pay_quote" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/linerLayoutItemViewQuotes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seperator_view_height"
+        android:background="@drawable/shadow" />
+
+    <ProgressBar
+        android:id="@+id/progressBarViewQuote"
+        android:layout_marginLeft="@dimen/margin_25dp"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:layout_width="@dimen/margin_25dp"
+        android:layout_height="@dimen/margin_25dp" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bkkk"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@mipmap/bkk"
+        android:orientation="vertical">
+
+        <com.munye.component.MyRaidProTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9F1B20"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:drawableTop="@drawable/warning"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="fdsfdsfds"
+            android:id="@+id/msg"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:id="@+id/verificationKey"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter Verification Key"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="number" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnInvoiceOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="5dp"
+        android:text="Verify"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="5dp"
+        android:text="Skip"
+        android:background="@color/colorPrimary"/>
+
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnInvoiceCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="5dp"
+        android:text="Cancel"
+        android:background="@color/colorPrimary"/>
+
+
+</LinearLayout>

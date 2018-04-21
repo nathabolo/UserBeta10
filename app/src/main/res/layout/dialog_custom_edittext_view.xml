@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+
+
+    <com.munye.component.MyFontTextView
+        android:id="@+id/tvEdittextDialogTitle"
+        android:padding="@dimen/margin_10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Account"
+        android:textSize="25sp"/>
+
+
+    <View
+        android:layout_marginLeft="@dimen/margin_30dp"
+        android:layout_marginRight="@dimen/margin_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"></View>
+
+
+    <com.munye.component.MyFontEditText
+
+        android:id="@+id/edtDialogEdittext"
+        android:padding="@dimen/margin_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Password"
+        android:inputType="textPassword"
+        android:background="@color/color_white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.munye.component.MyFontButton
+            android:id="@+id/btnUpdateNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:text="NO"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:background="@color/color_button_background"/>
+
+
+        <com.munye.component.MyFontButton
+            android:id="@+id/btnUpdateYes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="YES"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:background="@color/color_button_background"/>
+
+    </LinearLayout>
+
+</LinearLayout>

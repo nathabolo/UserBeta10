@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/bkk"
+        android:orientation="vertical">
+
+        <com.munye.component.MyRaidProTextView
+            android:id="@+id/tvTokenBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_20dp"
+            android:textColor="@color/color_white"
+            android:drawablePadding="@dimen/margin_15dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/warning"/>
+
+    </LinearLayout>
+
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnInvoiceBuyTokens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:background="@color/colorPrimary"/>
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnInvoiceOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="15dp"
+        android:text="Buy Tokens"
+        android:background="@color/colorPrimary"/>
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnInvoiceCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="15dp"
+        android:text="Cancel"
+        android:background="@color/colorPrimary"/>
+
+
+</LinearLayout>

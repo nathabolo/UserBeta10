@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.munye.MapActivity"
+    tools:showIn="@layout/app_bar_map">
+
+
+    <FrameLayout
+        android:id="@+id/mapFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_above="@+id/linearLayoutSearchBar"
+        android:visibility="visible" >
+
+        <com.munye.component.CustomMapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+     android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+        <include
+            android:id="@+id/layoutSelectLocationPin"
+            android:layout_gravity="center"
+            layout="@layout/custom_bubble_marker"
+            tools:ignore="IncludeLayoutParam" />
+
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/btnMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/location_button"
+        android:layout_above="@id/linearLayoutSearchBar"
+        android:layout_marginRight="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewProviderTypeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_above="@+id/linearLayoutSearchBar"
+        android:scrollbars="vertical"/>
+
+    <View
+        android:layout_above="@+id/linearLayoutSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seperator_view_height"
+        android:background="@drawable/shadow"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSearchBar"
+        android:padding="@dimen/margin_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/color_white"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/service_spinner1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/search_item"
+                    android:layout_width="150dp"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1.8dp"
+                    android:background="@drawable/boarder"
+                    android:hint="Eg Nanny"
+                    android:inputType="text" />
+            </LinearLayout></ScrollView>
+
+
+            <AutoCompleteTextView
+                android:visibility="gone"
+                android:id="@+id/tvplaceAutocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext_background"
+                android:drawableLeft="@drawable/serch_icon"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:paddingRight="@dimen/margin_10dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:textSize="14sp"
+                android:padding="@dimen/margin_10dp"
+                android:textColorHint="@color/color_editext_hint"
+                android:hint="@string/hint_txt_search_location"
+                android:inputType="textNoSuggestions" />
+
+
+            <ImageView
+                android:id="@+id/imgViewClearSearch"
+                android:visibility="gone"
+                android:layout_marginRight="1dp"
+                android:background="@color/color_white"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/margin_5dp"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear_search"/>
+
+
+        </RelativeLayout>
+
+
+
+        <!--<Spinner-->
+            <!--android:id="@+id/service_spinner"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginBottom="1dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/colorPrimary"/>-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtresults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="JimmieJobs" />
+
+
+</RelativeLayout>

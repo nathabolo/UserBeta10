@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "12441571273",
+    "firebase_url": "https://tradesman-2785a.firebaseio.com",
+    "project_id": "tradesman-2785a",
+    "storage_bucket": "tradesman-2785a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12441571273:android:c00e94179b4024e2",
+        "android_client_info": {
+          "package_name": "com.elluminati.tradesman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12441571273-n9e817vao9c60igal6gaohhul1gbmv28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVDBGnU8YXEDMQfvSDMefksxjIj-S_syY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

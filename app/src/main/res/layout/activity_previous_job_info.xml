@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_previous_job_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context="com.munye.PreviousJobInfoActivity">
+
+    <include
+        android:id="@+id/toolBarLayout"
+        layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/toolBarLayout"
+        android:layout_above="@+id/btnRetryRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:id="@+id/imgViewHistroyJobIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <com.munye.component.MyRaidProBoldTextView
+                        android:id="@+id/tvHistoryJobTitle"
+                        style="@style/jobTitleTextViewStyle"
+                        android:text="Blowing ambient air"
+                        />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvHistoryJobType"
+                        style="@style/jobTypeTextViewStyle"
+                        android:text="Repair/Maintanance"
+                       />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvHistoryJobDate"
+                        style="@style/jobDateTextViewStyle"
+                        android:text="10/01/2017 , 04:15PM"
+                        />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvHistoryJobDescription"
+                        style="@style/jobDescriptionTextViewStyle"
+                        android:layout_marginTop="2dp"
+                        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <com.munye.component.MyRaidProTextView
+                        android:id="@+id/tvHistoryJobAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="05$"
+                        android:textColor="@color/color_text_amount_quote"
+                        android:textSize="@dimen/text_size_no_quotes_view_quotes" />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvHistoryJobYouPaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_you_paid"
+                        android:textColor="@color/color_text_quote_and_pay"
+                        android:textSize="@dimen/text_size_pay_quote" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seperator_view_height"
+                android:background="@drawable/shadow" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:id="@+id/imgPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_25dp"
+                    android:src="@drawable/pin_active_job" />
+
+                <com.munye.component.MyFontTextView
+                    android:id="@+id/tvHistoryJobAddress"
+                    style="@style/jobAddressTextViewStyle"
+                    android:layout_marginLeft="@dimen/marging_15dp"
+                    android:layout_toRightOf="@+id/imgPin"
+                    android:text="Address of new Streer \nline2" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seperator_view_height"
+                android:background="@drawable/shadow"/>
+
+            <ImageView
+                android:id="@+id/imgHistoryIssueImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_issue_image_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_img"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:id="@+id/imgHistoryProviderImage"
+                    android:layout_width="@dimen/dimen_provider_image_width_previous_job"
+                    android:layout_height="@dimen/dimen_provider_image_height_previous_job"
+                    android:src="@drawable/default_icon"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marging_15dp"
+                    android:orientation="vertical">
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvHistoryProviderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_provider_name"
+                        android:textColor="@color/color_text_provider_name_active_job"
+                        android:text="Samantha Aryton"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingHistoryProvider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:stepSize="0.1"
+                        android:isIndicator="true"
+                        style="@style/myRatingBar"
+                        android:numStars="5"/>
+
+
+                    <com.munye.component.MyFontTextView
+                        android:visibility="gone"
+                        android:id="@+id/tvJobCancelStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_tradesman_status"
+                        android:textSize="@dimen/text_size_provider_name"
+                        android:text="Request cancelled by JimmieJobs"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seperator_view_height"
+                android:background="@drawable/shadow"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10dp">
+
+                <ImageView
+                    android:id="@+id/imgFeedbackMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_25dp"
+                    android:src="@drawable/feedback_icon" />
+
+                <com.munye.component.MyFontTextView
+                    android:id="@+id/tvFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft ="@dimen/margin_10dp"
+                    android:layout_toRightOf="@+id/imgFeedbackMessage"
+                    android:text="Here is feedback from the provider sides"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnRetryRequest"
+        android:layout_margin="@dimen/margin_10dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_button"
+        android:textAllCaps="false"
+        android:text="Retry Request"
+        android:background="@drawable/custom_button_shape"/>
+
+
+</RelativeLayout>

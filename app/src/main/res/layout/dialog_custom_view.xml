@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <com.munye.component.MyFontTextView
+        android:id="@+id/tvDialogContent"
+        android:padding="@dimen/margin_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Your Internet seems to be disabled , You must enable it."/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.munye.component.MyFontButton
+            android:id="@+id/btnDialogNo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="No"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:layout_marginRight="1dp"
+            android:layout_height="wrap_content" />
+
+        <com.munye.component.MyFontButton
+            android:id="@+id/btnDialogYes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="YES"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

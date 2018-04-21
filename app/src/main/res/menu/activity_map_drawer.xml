@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_profile_update"
+        android:icon="@drawable/profile_icon_drawer"
+        android:title="@string/drawer_profile" />
+
+
+    <item
+        android:id="@+id/nav_view_quotes"
+        android:icon="@drawable/view_quote_icon"
+        android:title="@string/drawer_list_view_quotes" />
+
+
+    <item
+        android:id="@+id/nav_my_jobs"
+        android:icon="@drawable/job_icon"
+        android:title="@string/drawer_list_my_jobs" />
+    <item
+        android:id="@+id/buyTokens"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Buy Tokens" />
+
+
+
+    <item
+        android:id="@+id/nav_payment"
+        android:icon="@drawable/fbshare"
+        android:title="@string/share_to_earn_tokens" />
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/help"
+        android:title="@string/help" />
+
+    <!--<item-->
+        <!--android:id="@+id/idImage"-->
+        <!--android:icon="@drawable/ic_menu_send"-->
+        <!--android:title="Upload Id" />-->
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout_icon"
+        android:title="@string/drawer_list_logout" />
+
+    <!--<item android:title="Payment">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/add_card"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Add Card" />-->
+            <!--<item-->
+                <!--android:id="@+id/viewCard"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="View Card" />-->
+            <!--<item-->
+                <!--android:id="@+id/buyTokens"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Buy Tokens" />-->
+
+            <!--<item-->
+                <!--android:id="@+id/idImage"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Upload Id" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bkkk"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/content_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.munye.component.MyFontEditText
+                android:id="@+id/edtEmail"
+                style="@style/editTextBox"
+                android:drawableLeft="@drawable/email_icon"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/color_edit_text_hint" />
+
+
+            <com.munye.component.MyFontEditText
+                android:id="@+id/edtPassword"
+                style="@style/editTextBox"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:drawableLeft="@drawable/password_icon"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/color_edit_text_hint" />
+
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/margin_15dp"
+                android:text="@string/txt_forgot_password"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/forgot_password_text_size" />
+
+
+            <com.munye.component.MyFontButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton"
+                android:text="@string/txt_sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvDoNotHaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_do_not_have_account_yet"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/do_not_have_account_textsize" />
+
+            <com.munye.component.MyRaidProBoldTextView
+                android:id="@+id/tvGotoRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:paddingLeft="2dp"
+                android:textSize="@dimen/register_text_size"
+                android:text="@string/txt_register_signin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

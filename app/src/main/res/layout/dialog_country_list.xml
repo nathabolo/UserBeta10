@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.munye.component.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:padding="10dp"
+        android:text="Country Code"/>
+
+
+    <com.munye.component.MyFontEditText
+        android:id="@+id/edtSearchCountryCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_email"
+        android:drawableLeft="@drawable/serch_icon"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:drawablePadding="@dimen/margin_15dp"
+        android:hint="Search Country"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewCountryCode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

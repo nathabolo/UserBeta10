@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_view_quotes_10dp">
+
+                <ImageView
+                    android:id="@+id/imgViewDetailQuoteJobIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_view_quotes_10dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <com.munye.component.MyRaidProBoldTextView
+                        android:id="@+id/tvDetailQuoteJobTitle"
+                        style="@style/jobTitleTextViewStyle"
+                        android:text="Blowing ambient air" />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvDetailQuoteJobType"
+                        style="@style/jobTypeTextViewStyle"
+                        android:text="Repair/Maintanance" />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvDetailQuoteDate"
+                        style="@style/jobDateTextViewStyle"
+                        android:text="10/01/2017 , 04:15PM" />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvDetailQuoteDescription"
+                        style="@style/jobDescriptionTextViewStyle"
+                        android:layout_marginTop="2dp"
+                        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_view_quotes_10dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <com.munye.component.MyRaidProTextView
+                        android:id="@+id/tvDetailQuoteTotalQuote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="05"
+                        android:textColor="@color/color_text_amount_quote"
+                        android:textSize="@dimen/text_size_no_quotes_view_quotes" />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvViewQuotesTextQuotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_quotes"
+                        android:textColor="@color/color_text_quote_and_pay"
+                        android:textSize="@dimen/txt_size_text_quote" />
+
+                    <ImageButton
+                        android:id="@+id/imgButtonDeleteJob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_white"
+                        android:padding="@dimen/dimen_view_quotes_10dp"
+                        android:src="@drawable/delete" />
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tdsf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/txt_delete_job"
+                        android:textColor="@color/color_text_quote_and_pay"
+                        android:textSize="@dimen/text_size_text_delete_job" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seperator_view_height"
+                android:background="@drawable/shadow" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_view_quotes_10dp">
+
+                <ImageView
+                    android:id="@+id/imgPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_accept_quote_25dp"
+                    android:src="@drawable/pin_active_job" />
+
+                <com.munye.component.MyFontTextView
+                    android:id="@+id/tvDetailQuoteAddress"
+                    style="@style/jobAddressTextViewStyle"
+                    android:layout_marginLeft="@dimen/dimen_accept_quote_15dp"
+                    android:layout_toRightOf="@+id/imgPin"
+                    android:text="Address of new Streer \nNew York" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seperator_view_height"
+                android:background="@drawable/shadow" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewAcceptQuotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

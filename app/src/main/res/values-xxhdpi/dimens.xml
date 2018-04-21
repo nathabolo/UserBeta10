@@ -1,0 +1,142 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Social button dimen -->
+    <dimen name="padding_left_social_button">60dp</dimen>
+    <dimen name="social_button_text_size">18sp</dimen>
+
+    <!-- Edittext dimen -->
+    <dimen name="padding_editext">15dp</dimen>
+
+    <!-- Button component dimen-->
+    <dimen name="text_size_register_button">22sp</dimen>
+    <dimen name="text_size_button">22sp</dimen>
+
+    <!--Signin screen dimen-->
+    <dimen name="do_not_have_account_textsize">20sp</dimen>
+    <dimen name="forgot_password_text_size">15sp</dimen>
+    <dimen name="register_text_size">22sp</dimen>
+
+    <!-- Rating star dimen -->
+    <dimen name="feedback_rating_min_height">31dip</dimen>
+    <dimen name="feedback_rating_max_height">31dip</dimen>
+    <dimen name="rating_min_height">18dip</dimen>
+    <dimen name="rating_max_height">18dip</dimen>
+    <dimen name="star_heights">21dp</dimen>
+
+    <!-- Margin dimen -->
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+
+
+    <!-- Update profilr screen-->
+    <dimen name="update_profile_header_height">200dp</dimen>
+    <dimen name="profile_update_circular_image_width">100dp</dimen>
+    <dimen name="profile_update_circular_image_height">100dp</dimen>
+    <dimen name="profile_update_name_size">24sp</dimen>
+    <dimen name="content_padding">20dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="total_job_complete_size">15sp</dimen>
+    <dimen name="tool_bar_title_size">25sp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="update_profile_image_progress_size">40dp</dimen>
+
+
+    <!-- Register Screen -->
+    <dimen name="dimen_profile_pic_width">100dp</dimen>
+    <dimen name="dimen_profile_pic_height">100dp</dimen>
+    <dimen name="txt_country_code_size">17sp</dimen>
+    <dimen name="contact_seperator_view_height">35dp</dimen>
+
+
+    <!-- Map screen -->
+    <dimen name="font_size_catagory">18sp</dimen>
+    <dimen name="dimen_map_screen_12dp">12dp</dimen>
+    <dimen name="dimen_bubble_set_location_font_size">15sp</dimen>
+    <dimen name="dimen_bubble_12dp">12dp</dimen>
+    <dimen name="dimen_bubble_15dp">15dp</dimen>
+    <dimen name="dimen_buuble_35dp">35dp</dimen>
+
+    <!-- Create job screen-->
+    <dimen name="shadow_height">4dp</dimen>
+    <dimen name="dimen_create_job_10dp">10dp</dimen>
+    <dimen name="dimen_create_job_15dp">15dp</dimen>
+    <dimen name="dimen_create_job_5dp">5dp</dimen>
+    <dimen name="dimen_create_job_3dp">3dp</dimen>
+    <dimen name="dimen_create_job_description_text_size">15sp</dimen>
+    <dimen name="dimen_create_job_type_image_width">50dp</dimen>
+    <dimen name="dimen_create_job_type_image_height">50dp</dimen>
+    <dimen name="text_size_job_title_create_job">17sp</dimen>
+
+
+    <!-- Default dimension for all screens -->
+    <dimen name="text_size_job_type">15sp</dimen>
+    <dimen name="text_size_job_date">12sp</dimen>
+    <dimen name="text_size_job_description">12sp</dimen>
+    <dimen name="seperator_view_height">3dp</dimen>
+    <dimen name="text_size_job_address">15sp</dimen>
+    <dimen name="text_size_job_title">18sp</dimen>
+    <dimen name="text_size_pay_quote">12sp</dimen>
+
+
+    <!-- View quote screen -->
+    <dimen name="dimen_view_quotes_10dp">10dp</dimen>
+    <dimen name="text_size_title_view_quotes">18sp</dimen>
+    <dimen name="text_size_description_view_quotes">12sp</dimen>
+    <dimen name="text_size_no_quotes_view_quotes">30sp</dimen>
+
+
+    <!-- Accept quote screen -->
+    <dimen name="dimen_accept_quote_15dp">15dp</dimen>
+    <dimen name="dimen_accept_quote_25dp">25dp</dimen>
+    <dimen name="dimen_ratting_bar_height_accept_quote">18dp</dimen>
+    <dimen name="dimen_provider_image_height_accept_quote">60dp</dimen>
+    <dimen name="dimen_provider_image_width_accept_quote">60dp</dimen>
+    <dimen name="txt_size_text_quote">12sp</dimen>
+    <dimen name="text_size_text_delete_job">12sp</dimen>
+    <dimen name="txt_size_provider_name_accept_item">16sp</dimen>
+
+    <!-- Activejob screen -->
+    <dimen name="text_size_provider_name">16sp</dimen>
+    <dimen name="text_size_job_completed">28sp</dimen>
+    <dimen name="dimen_issue_image_height">150dp</dimen>
+
+    <!--Feedback screen-->
+    <dimen name="dimen_provider_image_width_feeback">70dp</dimen>
+    <dimen name="dimen_provider_image_height_feeback">70dp</dimen>
+
+    <!--MyJob screen-->
+    <dimen name="text_size_tab_my_job">20sp</dimen>
+
+    <!--Previous job screen -->
+    <dimen name="dimen_provider_image_width_previous_job">60dp</dimen>
+    <dimen name="dimen_provider_image_height_previous_job">60dp</dimen>
+    <dimen name="header_height_update_profile">150dp</dimen>
+    <dimen name="margin_7dp">7dp</dimen>
+
+
+
+    <!-- Payment screen -->
+    <dimen name="text_size_title_selected_card">16sp</dimen>
+    <dimen name="text_size_card_no">20sp</dimen>
+    <dimen name="text_size_no_card_diasplayed">20sp</dimen>
+
+
+    <!-- Invoice Screen -->
+    <dimen name="text_size_invoice_title">25sp</dimen>
+    <dimen name="text_size_amount_type">20sp</dimen>
+    <dimen name="text_size_payment_mode">12sp</dimen>
+    <dimen name="text_size_payment_amount">15sp</dimen>
+    <dimen name="text_size_total_invoice">16sp</dimen>
+    <dimen name="text_size_total_amount">30sp</dimen>
+
+
+
+</resources>

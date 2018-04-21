@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <com.munye.component.MyRaidProTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_20dp"
+            android:textColor="@color/color_white"
+            android:drawablePadding="@dimen/margin_15dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_invoice_title"
+            android:drawableTop="@drawable/paper_icon"
+            android:text="@string/txt_invoice_title"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+        <com.munye.component.MyFontTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_amount_type"
+            android:textColor="@color/color_text_amount_quote"
+            android:text="Account Balance"/>
+
+        <com.munye.component.MyFontTextView
+            android:id="@+id/tvAccBalance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_amount_type"
+            android:layout_height="wrap_content"
+            android:text="66.00$"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+        <com.munye.component.MyFontTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_amount_type"
+            android:textColor="@color/color_text_amount_quote"
+            android:text="@string/txt_job_amount_invoice"/>
+
+        <com.munye.component.MyFontTextView
+            android:id="@+id/tvInvoiceJobAmount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_amount_type"
+            android:layout_height="wrap_content"
+            android:text="66.00$"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:background="@color/color_editext_hint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+        <com.munye.component.MyFontTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_amount_type"
+            android:textColor="@color/color_text_amount_quote"
+            android:text="@string/txt_admin_charge_invoice"/>
+
+        <com.munye.component.MyFontTextView
+            android:id="@+id/tvInvoiceAdminPrice"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textSize="@dimen/text_size_amount_type"
+            android:textColor="@color/color_black"
+            android:layout_height="wrap_content"
+            android:text="20.01$"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:background="@color/color_editext_hint"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.munye.component.MyFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_payment_mode"
+                    android:text="Admin Charge"/>
+
+                <com.munye.component.MyFontTextView
+                    android:id="@+id/tvAmountPayByCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_size_payment_amount"
+                    android:text="20.01$"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.munye.component.MyFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_payment_mode"
+                    android:text="@string/txt_remaining_invoice"/>
+
+                <com.munye.component.MyFontTextView
+                    android:id="@+id/tvAmountPayByCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_size_payment_amount"
+                    android:text="66.00$"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.munye.component.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_total_invoice"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:textColor="@color/color_text_amount_quote"
+        android:text="@string/txt_total_invoice"/>
+
+    <com.munye.component.MyFontTextView
+        android:id="@+id/tvInvoiceGrandTotal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_5dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_total_amount"
+        android:textColor="@color/color_black"
+        android:text="86.01$"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="10sp"
+        android:text="By accessing and using the JimmieJobs App, you agree to be bound by the JimmieJobs terms and conditions of use. If you are using the platform on behalf of an organisation or entity, then you are agreeing to the Terms and conditions on behalf of that organisation or entity and you represent and warrant that you have the authority to bind the organisation or entity to these terms. In that case, ‘you and your” refer to you and that organisation or entity."
+        android:textColor="@color/color_title_text_color" />
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnInvoiceBuyTokens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:background="@color/colorPrimary"/>
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnInvoiceOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="15dp"
+        android:text="Proceed With Payment"
+        android:background="@color/colorPrimary"/>
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnInvoiceCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="15dp"
+        android:text="Cancel"
+        android:background="@color/colorPrimary"/>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutActiveJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_view_quotes_10dp">
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/imgActiveJobIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_view_quotes_10dp"
+            android:layout_toLeftOf="@+id/amountLayout"
+            android:orientation="vertical">
+
+            <com.munye.component.MyRaidProBoldTextView
+                android:id="@+id/tvActiveJobTitle"
+                style="@style/jobTitleTextViewStyle"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_title_view_quotes"
+                android:text="Job Title"
+                />
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvActiveJobDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10/01/2017 , 04:15PM"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_description_view_quotes" />
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvActiveJobDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                android:textSize="@dimen/text_size_description_view_quotes" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/amountLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <com.munye.component.MyRaidProTextView
+                android:id="@+id/tvActiveJobAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05$"
+                android:textColor="@color/color_text_amount_quote"
+                android:textSize="@dimen/text_size_no_quotes_view_quotes" />
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvtoPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_to_pay"
+                android:textColor="@color/color_text_quote_and_pay"
+                android:textSize="@dimen/text_size_pay_quote" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgActiveJobIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seperator_view_height"
+        android:background="@drawable/shadow"/>
+</LinearLayout>

@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name">JimmieJobs</string>
+
+    <string-array name="array_services">
+        <item>SELECT SERVICE</item>
+        <item>CARPENTER</item>
+        <item>PLUMBER</item>
+    </string-array>
+    <string name="facebook_app_id">870552069772664</string>
+    <string name="google_maps_key">AIzaSyAVDBGnU8YXEDMQfvSDMefksxjIj-S_syY</string>
+    <string name="string_main">The Homepage is a display of all service providers within your area based on their last known location.You can filter the providers by selecting a category that you want and only the service providers offering services in that category will appear. You can also pinch the screen to zoom in. Hold your finger and move it in any direction to show other areas.
+</string>
+    <!-- Splash screen -->
+    <string name="txt_sign_in">Sign in</string>
+    <string name="txt_register">Register</string>
+
+    <!-- Map screen -->
+    <string name="txt_waiting_for_address">Waiting for Address..</string>
+    <string name="txt_waiting_for_location">Waiting for location</string>
+    <string name="txt_provider_location">Provider Location</string>
+    <string name="hint_txt_search_location">Search Location</string>
+    <string name="txt_hire_expert_workers_for_job">Contact with experts</string>
+    <string name="txt_what_you_are_looking_for">What you are looking for ?</string>
+    <string name="txt_set_location">Set Location</string>
+
+
+    <!-- ToolBar Title -->
+    <string name="title_sign_in">Sign in</string>
+    <string name="title_register">Register</string>
+    <string name="title_home">JimmieJobs</string>
+    <string name="title_create_job">Create Job</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_view_quotes">View Quotes</string>
+    <string name="title_my_jobs">My Jobs</string>
+    <string name="title_active_job">Active Job</string>
+    <string name="title_previous_job">Previous Job</string>
+    <string name="title_feedback">Feedback</string>
+    <string name="title_payment">Payment</string>
+
+    <!-- SignIn screen -->
+    <string name="txt_sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="txt_sign_in_with_google">Sign in with Google</string>
+    <string name="txt_do_not_have_account_yet">Don\'t have account yet ? </string>
+    <string name="txt_forgot_password">Forgot Password ?</string>
+    <string name="txt_register_signin">Register</string>
+
+
+    <!--Register page strings -->
+    <string name="txt_register_in_with_facebook">Register in with Facebook</string>
+    <string name="txt_register_in_with_google">Register in with Google</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_contact_no">Contact No</string>
+    <string name="hint_address">Address</string>
+    <string name="txt_have_account">Have an account?</string>
+    <string name="txt_login">Login</string>
+
+
+    <!--Create job page strings-->
+    <string name="title_job_title">Job title</string>
+    <string name="hint_job_title">Please Enter Job title</string>
+    <string name="txt_repair_maintenance"> </string>
+    <string name="txt_installation"> </string>
+    <string name="title_description">Description</string>
+    <string name="hint_description">Write detail brief about work to be done.</string>
+    <string name="title_location">Location</string>
+    <string name="title_upload_picture">Upload Picture to site</string>
+    <string name="hint_upload_image">Upload image</string>
+    <string name="txt_button_post_job">Post Job</string>
+    <string name="toast_job_create_success">Your request posted successfully.</string>
+
+
+    <!--Toast Messages-->
+    <string name="toast_name_not_be_empty">Name cannot be empty</string>
+    <string name="toast_invalid_email">Invalid Email Address !</string>
+    <string name="toast_password_not_matched">Password does not matched !</string>
+    <string name="toast_invalid_contact">Please Enter valid contact no.</string>
+    <string name="toast_enter_an_address">Please Enter an Address</string>
+    <string name="toast_password_lenght">Password must be at least 6 characters long</string>
+    <string name="toast_no_interner_connection">No internet connection</string>
+    <string name="toast_blank_password">Password must not be blank</string>
+    <string name="toast_error_unable_to_get_image">Unable to get image , please try again.</string>
+    <string name="toast_error_unable_to_select_image">Unable to select Image</string>
+    <string name="toast_job_title_required">Job Title is required.</string>
+    <string name="toast_description_required">Description required.</string>
+    <string name="toast_select_service">Please select service for create a job</string>
+    <string name="toast_no_provider_available">No provider available near your location</string>
+    <string name="toast_no_location_found">Location not found , Please try again.</string>
+    <string name="toast_no_address_found">Address not found , Please try again.</string>
+
+    <!-- Dialog Text -->
+    <string name="txt_dialog_choose_picture">Choose Picture</string>
+    <string name="txt_dialog_gallery">Gallery</string>
+    <string name="txt_dialog_Camera">Camera</string>
+
+
+    <!-- Fragment Tags -->
+    <string name="active">Active</string>
+    <string name="previous">Previous</string>
+
+
+    <!-- Drawer list -->
+    <string name="drawer_profile">Profile</string>
+    <string name="drawer_list_view_quotes">View Quotes</string>
+    <string name="drawer_list_my_jobs">My Jobs</string>
+    <string name="drawer_list_logout">Logout</string>
+    <string name="drawer_list_history">History</string>
+    <string name="drawer_list_payment">Payment</string>
+
+
+    <!--ActiveJob Activity -->
+    <string name="txt_button_cancel_job">Cancel Job</string>
+    <string name="txt_button_feedback">Feedback</string>
+    <string name="text_to_pay">to pay</string>
+
+
+    <!--Previous job activity-->
+    <string name="txt_you_paid">You paid</string>
+    <string name="cancel_status_tradesmman">Request cancelled by JimmieJobs</string>
+    <string name="cancel_status_you">Request cancelled by you</string>
+    <string name="txt_no_feedback">No feedback from provider.</string>
+
+
+    <!-- Feedback Activity -->
+    <string name="text_you_paid">You Paid</string>
+    <string name="text_button_submit">Submit</string>
+
+
+    <!--View quote activity -->
+    <string name="txt_quotes">Quotes</string>
+    <string name="txt_delete_job">Delete\nJob</string>
+
+    <!-- Provider status message -->
+    <string name="status_tradesman_confirm">Provider Confirm</string>
+    <string name="status_tradesman_on_the_way">Service Provider is on the way</string>
+    <string name="status_tradesman_arrived">Service Provider has arrived</string>
+    <string name="status_trdesman_started">Service Provider has started</string>
+    <string name="status_job_done">Job Done</string>
+
+
+    <!-- Myjob activity -->
+    <string name="tab_title_active">Active</string>
+    <string name="tab_title_previous">Previous</string>
+
+
+    <!-- Payment Activity -->
+    <string name="text_no_item_to_display">No item to be displayed.</string>
+    <string name="text_button_add_card">Add new card</string>
+    <string name="text_button_skip">Skip</string>
+    <string name="txt_selected_card">Selected Card</string>
+    <string name="txt_other_cards">Other Cards</string>
+    <string name="txt_remove">Remove</string>
+    <string name="toast_card_no_invalid">The card number that you entered is invalid.</string>
+    <string name="toast_month_invalid">Please enter valid month.</string>
+    <string name="toast_year_invalid">Please enter valid year.</string>
+    <string name="toast_cvv_invalid">Please enter valid cvv.</string>
+    <string name="toast_card_invalid">Invalid card.</string>
+    <string name="toast_enter_card_no">Please enter card no.</string>
+    <string name="toast_card_month_not_empty">Card month should not be empty.</string>
+    <string name="toast_card_year_not_empty">Card year should not be empty.</string>
+    <string name="toast_card_cvv_not_empty">CVV no should not be empty.</string>
+
+
+    <!-- Invoice screen-->
+    <string name="txt_invoice_title">Invoice</string>
+    <string name="txt_job_amount_invoice">Job Amount</string>
+    <string name="txt_admin_charge_invoice">Admin Charge</string>
+    <string name="txt_card_invoice">Card</string>
+    <string name="txt_remaining_invoice">Remaining</string>
+    <string name="txt_total_invoice">Total</string>
+    <string name="txt_button_ok">OK</string>
+
+    <!--Dialog strings-->
+    <string name="dialog_message_internet">Your Internet seems to be disabled , You must enable it.</string>
+    <string name="dialog_button_yes">Yes</string>
+    <string name="dialog_button_no">No</string>
+    <string name="dialog_button_logout">Logout</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_delete">Delete</string>
+    <string name="dialog_message_gps">Your Location Service seems to be disabled. You must enable it.</string>
+    <string name="dialog_title_exit">EXIT</string>
+    <string name="dialog_title_logout">Logout</string>
+    <string name="dialog_title_delete_job">Delete Job</string>
+    <string name="dialog_message_are_you_sure">Are you sure?</string>
+    <string name="dialog_title_accept_quote">Accept quote</string>
+    <string name="dialog_title_reject_quote">Reject quote</string>
+    <string name="dialog_message_accept_quote">Do you want to Connect with this provider?</string>
+    <string name="dialog_message_reject_quote">Do you want to reject this provider?</string>
+    <string name="dilaog_title_verify_account">Verify Account</string>
+    <string name="dilaog_title_forgot_password">Forgot Password?</string>
+    <string name="dialog_title_delete_card">Delete Card</string>
+    <string name="dialog_button_send">Send</string>
+    <string name="dialog_hint_current_password">Current Password</string>
+    <string name="dilaog_hint_email">Enter your Email.</string>
+    <string name="diloag_message_location_permission">Without this permission, app will be unable to get your location and address. Are you sure you want to deny this permission?</string>
+    <string name="dialog_button_retry">RETRY</string>
+    <string name="dilaog_button_imsure">I\'M SURE</string>
+    <string name="dialog_message_location_never_ask">If you want to use this app you must enable permission in system permission settings.</string>
+    <string name="dialog_button_exit">EXIT</string>
+    <string name="dialog_button_setting">SETTINGS</string>
+    <string name="dialog_message_pending_payment">Please clear out pending payment to create new request.\n\nYour current pending payment is : </string>
+    <string name="dialog_button_pay">Pay</string>
+    <string name="dialog_title_cancel_job">Cancel Job</string>
+
+
+    <!--Client error messages-->
+    <string name="error_1">Password must not be blank.</string>
+    <string name="error_2">Please enter valid Email ID.</string>
+    <string name="error_3">Please enter Your name.</string>
+    <string name="error_4">Please enter Mobile Number.</string>
+    <string name="error_5">For Internal use? Insert device dype</string>
+    <string name="error_6">Email id is already registered.</string>
+    <string name="error_7">Social unique id not generated, Please try again.</string>
+    <string name="error_8">Customer not found, please re-login to your account.</string>
+    <string name="error_9">Please enter valid Referral code.</string>
+    <string name="error_10">Not a registered Social Unique ID.</string>
+    <string name="error_11">Your Login attempt failed. The Email ID or password may be incorrect.</string>
+    <string name="error_12">Session is expired, please re-login to your account.</string>
+    <string name="error_13">Customer not found, please re-login to your account.</string>
+    <string name="error_14">New Password is required.</string>
+    <string name="error_15">Incorrect old password.</string>
+    <string name="error_16">New Version of Application is available please update your application.</string>
+    <string name="error_17">Location points are missing</string>
+    <string name="error_18">Please select service type.</string>
+    <string name="error_19">Please, pay the previous request bill to create new request.</string>
+    <string name="error_20">Please select request ID.</string>
+    <string name="error_21">Please select provider ID.</string>
+    <string name="error_22">Request not found please try again.</string>
+    <string name="error_23">Invalid Card number</string>
+    <string name="error_24">Unique stripe token is missing</string>
+    <string name="error_25">Card adding fail</string>
+    <string name="error_26">Stripe customer id is missing</string>
+    <string name="error_27">Sorry, you can\'t delete last card because of your card based request is currently running.</string>
+    <string name="error_28">Sorry, the job is not completed.</string>
+    <string name="error_29">Request was not created by you.</string>
+    <string name="error_30">Sorry, Now you can\'t cancel the request.</string>
+    <string name="error_31">Sorry, You can\'t retry again. This request reached to the limit.</string>
+    <string name="error_32">Please add card first to create request.</string>
+    <string name="error_33">All Payments are done. You can create new request now.</string>
+    <string name="error_34">Payment failed, Please try other card.</string>
+    <string name="error_35">Payment failed, Please add card first.</string>
+    <string name="error_36">Payment failed, Please try after some time. Or add new card to complete payment.</string>
+    <string name="error_84">Cannot remove default card! Add new to remove</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="what_are_you_looking_for">Enter search item</string>
+    <string name="share_to_earn_tokens">Share To Earn Tokens</string>
+    <string name="help">Help</string>
+    <string name="share_via">Click this link to earn tokens with jimmie jobs app</string>
+
+
+</resources>

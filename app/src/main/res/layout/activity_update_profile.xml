@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_update_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.munye.UpdateProfileActivity">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/content_padding">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnUpdateProfile"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/profileUpdateHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="179dp"
+                    android:background="@mipmap/top_back"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgUpdateUserPhoto"
+                            android:layout_width="@dimen/dimen_profile_pic_width"
+                            android:layout_height="@dimen/dimen_profile_pic_height"
+                            android:layout_gravity="center"
+                            android:src="@drawable/default_icon"
+                            app:civ_border_color="@color/color_editext_hint"
+                            app:civ_border_width="1dp" />
+
+
+                        <ProgressBar
+                            android:id="@+id/pbarProfileImage"
+                            android:layout_width="@dimen/update_profile_image_progress_size"
+                            android:layout_height="@dimen/update_profile_image_progress_size"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                    <com.munye.component.MyRaidProBoldTextView
+                        android:id="@+id/tvUpdateUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:gravity="center"
+                        android:text="Jason Cook"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/profile_update_name_size" />
+
+                    <com.munye.component.MyRaidProBoldTextView
+                        android:id="@+id/tvTokenBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:gravity="center"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/profile_update_name_size" />
+
+
+                </LinearLayout>
+
+                <com.munye.component.MyFontEditText
+                    android:id="@+id/edtUpdateUserName"
+                    android:enabled="false"
+                    style="@style/editTextBox"
+                    android:drawableLeft="@drawable/profile_icon"
+                    android:hint="@string/hint_name"
+                    android:inputType="text"
+                    android:textColorHint="@color/color_editext_hint" />
+
+
+                <com.munye.component.MyFontEditText
+                    android:enabled="false"
+                    android:id="@+id/edtUpdateEmail"
+                    style="@style/editTextBox"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/color_edit_text_hint" />
+
+
+                <com.munye.component.MyFontEditText
+                    android:id="@+id/edtUpdateNewPassword"
+                    style="@style/editTextBox"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/hint_new_password"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/color_editext_hint" />
+
+
+                <com.munye.component.MyFontEditText
+                    android:id="@+id/edtUpdateConfirmPassword"
+                    style="@style/editTextBox"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/hint_confirm_password"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/color_editext_hint" />
+
+
+                <com.munye.component.MyFontEditText
+                    android:id="@+id/edtUpdateAddress"
+                    style="@style/editTextBox"
+                    android:drawableLeft="@drawable/address_icon"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:hint="@string/hint_address"
+                    android:textColorHint="@color/color_editext_hint" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/box_email"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:src="@drawable/contact_number"/>
+
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvUpdateCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+27"
+                        android:textSize="@dimen/txt_country_code_size"
+                        android:layout_marginLeft="@dimen/margin_15dp"/>
+
+                    <View
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_width="2dp"
+                        android:background="@color/color_editext_hint"
+                        android:layout_height="@dimen/contact_seperator_view_height">
+                    </View>
+
+                    <com.munye.component.MyFontEditText
+                        android:id="@+id/edtUpdateContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_editext_hint"
+                        android:hint="@string/hint_contact_no"
+                        android:maxLength="10"
+                        android:background="@color/color_white"
+                        android:layout_marginRight="2dp"
+                        android:inputType="number"
+                        android:maxLines="1"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.munye.component.MyFontButton
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/custom_button_shape"
+            android:text="Update Profile"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_button" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

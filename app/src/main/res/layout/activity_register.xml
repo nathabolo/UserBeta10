@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bkkk"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_editext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgUserPhoto"
+                        android:layout_width="@dimen/dimen_profile_pic_width"
+                        android:layout_height="@dimen/dimen_profile_pic_height"
+                        android:src="@drawable/user_register"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin_15dp"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/color_editext_hint"/>
+
+                    <com.munye.component.MyFontEditText
+                        android:id="@+id/edtRegisterUserName"
+                        style="@style/editTextBox"
+                        android:drawableLeft="@drawable/profile_icon"
+                        android:hint="@string/hint_name"
+                        android:inputType="text" />
+
+
+                    <com.munye.component.MyFontEditText
+                        android:id="@+id/edtRegisterEmail"
+                        style="@style/editTextBox"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:drawableLeft="@drawable/email_icon"
+                        android:hint="@string/hint_email"
+                        android:inputType="textEmailAddress" />
+
+
+                    <com.munye.component.MyFontEditText
+                        android:id="@+id/edtRegisterPassword"
+                        style="@style/editTextBox"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:drawableLeft="@drawable/password_icon"
+                        android:hint="@string/hint_password"
+                        android:inputType="textPassword" />
+
+
+                    <com.munye.component.MyFontEditText
+                        android:id="@+id/edtRegisterConformPassword"
+                        style="@style/editTextBox"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:drawableLeft="@drawable/password_icon"
+                        android:hint="@string/hint_confirm_password"
+                        android:inputType="textPassword" />
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/box_email"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_15dp"
+                            android:src="@drawable/contact_number"/>
+
+
+                        <com.munye.component.MyFontTextView
+                            android:id="@+id/tvCountryCodeType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+27"
+                            android:textSize="@dimen/txt_country_code_size"
+                            android:layout_marginLeft="@dimen/margin_15dp"/>
+
+                        <View
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:layout_marginRight="@dimen/margin_10dp"
+                            android:layout_width="2dp"
+                            android:background="@color/color_editext_hint"
+                            android:layout_height="@dimen/contact_seperator_view_height">
+                        </View>
+
+                        <com.munye.component.MyFontEditText
+                            android:id="@+id/edtRegisterConatctNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_contact_no"
+                            android:maxLength="10"
+                            android:background="@color/color_white"
+                            android:layout_marginRight="2dp"
+                            android:inputType="number"
+                            android:maxLines="1"/>
+
+
+                    </LinearLayout>
+                    <com.munye.component.MyFontEditText
+                        android:id="@+id/edtRegisterAddress"
+                        style="@style/editTextBox"
+                        android:layout_marginBottom="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:drawableLeft="@drawable/address_icon"
+                        android:hint="@string/hint_address"
+                        android:inputType="text" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <com.munye.component.MyFontButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:text="@string/txt_register"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_register_button" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_height="wrap_content">
+
+
+            <com.munye.component.MyFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/do_not_have_account_textsize"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/txt_have_account"/>
+
+
+            <com.munye.component.MyRaidProBoldTextView
+                android:id="@+id/tvGotoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textSize="@dimen/register_text_size"
+                android:paddingLeft="3dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/txt_login"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

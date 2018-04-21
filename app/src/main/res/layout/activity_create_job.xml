@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.munye.CreateJobActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_5dp">
+
+        <ImageView
+            android:id="@+id/imgViewPostJobType"
+            android:layout_width="@dimen/dimen_create_job_type_image_width"
+            android:layout_height="@dimen/dimen_create_job_type_image_height"
+            android:src="@mipmap/ic_launcher" />
+
+        <com.munye.component.MyRaidProBoldTextView
+            android:id="@+id/tvPostJobType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AIR CONDITIONER"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_job_title_create_job"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:background="@drawable/shadow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="10sp"
+        android:text="By accessing and using the JimmieJobs App, you agree to be bound by the JimmieJobs terms and conditions of use."
+        android:textColor="@color/color_title_text_color" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_create_job_15dp"
+            android:paddingRight="@dimen/dimen_create_job_15dp"
+            android:paddingTop="@dimen/dimen_create_job_10dp">
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/layoutAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_create_job_5dp"
+                android:text="Location of Job"
+                android:textColor="@color/color_title_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_create_job_3dp"
+                android:orientation="horizontal">
+
+                <com.munye.component.MyFontEditText
+                    android:id="@+id/edtLocationAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/box_email"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/dimen_create_job_10dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnEditAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_create_job_5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_background_with_grey_border"
+                    android:padding="@dimen/dimen_create_job_10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pencil" />
+
+            </LinearLayout>
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_job_title"
+                android:textColor="@color/color_title_text_color" />
+
+            <com.munye.component.MyFontEditText
+                android:id="@+id/edtJobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_create_job_3dp"
+                android:background="@drawable/box_email"
+                android:hint="@string/hint_job_title"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dimen_create_job_10dp"
+                android:textColor="@color/colorAccent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupServiceCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RadioGroup>
+
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_create_job_5dp"
+                android:text="@string/title_description"
+                android:textColor="@color/color_title_text_color" />
+
+            <com.munye.component.MyFontEditText
+                android:id="@+id/edtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_create_job_3dp"
+                android:background="@drawable/box_email"
+                android:gravity="top"
+                android:hint="@string/hint_description"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:overScrollMode="always"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:paddingLeft="@dimen/dimen_create_job_10dp"
+                android:paddingRight="@dimen/dimen_create_job_10dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:paddingTop="@dimen/dimen_create_job_3dp"
+                android:textSize="@dimen/dimen_create_job_description_text_size"/>
+            <com.munye.component.MyFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_create_job_5dp"
+                android:text=""
+                android:textColor="@color/color_title_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_create_job_10dp"
+                android:layout_marginTop="@dimen/dimen_create_job_3dp"
+                android:orientation="horizontal">
+
+
+                <com.munye.component.MyFontEditText
+                    android:id="@+id/edtImagePath"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/box_email"
+                    android:enabled="false"
+                    android:hint="@string/hint_upload_image"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxEms="5"
+                    android:paddingLeft="@dimen/dimen_create_job_10dp"
+                    android:text="" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnSelectImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_create_job_5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_background_with_grey_border"
+                    android:padding="@dimen/dimen_create_job_10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/plus" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.munye.component.MyFontButton
+        android:id="@+id/btnPostJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_15dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:background="@drawable/custom_button_shape"
+        android:text="Request Quote"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_button" />
+
+
+</LinearLayout>

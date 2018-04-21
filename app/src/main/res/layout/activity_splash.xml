@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/bkkk"
+    android:orientation="vertical">
+
+    <include layout="@layout/splash_sreen_toolbar" />
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="137dp"-->
+        <!--app:srcCompat="@mipmap/bkk" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutSplashButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/volleyText"
+                    />
+
+
+                <com.munye.component.MyFontButton
+                    android:id="@+id/btnSplashSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/marging_15dp"
+                    android:layout_marginRight="@dimen/margin_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton"
+                    android:text="@string/txt_sign_in"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_button"
+                    android:visibility="gone" />
+
+
+                <com.munye.component.MyFontButton
+                    android:id="@+id/btnSplashRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_3dp"
+                    android:layout_marginRight="@dimen/marging_15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton"
+                    android:text="@string/txt_register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_button"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

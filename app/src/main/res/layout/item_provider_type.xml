@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/margin_10dp"
+    android:id="@+id/llProviderTypeItem"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tvTypeTitle"
+        android:text="Ac service type"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"/>
+
+</LinearLayout>

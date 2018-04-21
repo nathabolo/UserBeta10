@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.munye.PaymentActivity">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_10dp">
+
+        <com.munye.component.MyRaidProBoldTextView
+            android:id="@+id/tvSelectedCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_title_selected_card"
+            android:text="@string/txt_selected_card"/>
+
+
+        <LinearLayout
+            android:id="@+id/linerDefaultCard"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvSelectedCard"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp">
+
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/cradDefaultCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/margin_15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/credit_card"/>
+
+                    <com.munye.component.MyRaidProTextView
+                        android:id="@+id/tvDefaultCardNo"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_card_no"
+                        android:text="4*** **** **** 4242"/>
+
+
+                    <com.munye.component.MyFontTextView
+                        android:id="@+id/tvRemoveDefaultCard"
+                        android:textColor="@color/color_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="@string/txt_remove"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <com.munye.component.MyFontTextView
+                android:visibility="visible"
+                android:id="@+id/tvNoSelectedCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_15dp"
+                android:layout_below="@id/tvSelectedCard"
+                android:gravity="center"
+                android:text="@string/text_no_item_to_display"/>
+
+        </LinearLayout>
+
+
+        <com.munye.component.MyRaidProBoldTextView
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:textSize="@dimen/text_size_title_selected_card"
+            android:id="@+id/tvOtherCard"
+            android:layout_below="@+id/linerDefaultCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:text="@string/txt_other_cards"/>
+
+        <RelativeLayout
+            android:layout_above="@+id/linerButtonLAyout"
+            android:layout_below="@+id/tvOtherCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:id="@+id/recyclerViewCardList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvNoOtherCrads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_no_item_to_display"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_no_card_diasplayed"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linerButtonLAyout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.munye.component.MyFontButton
+                android:id="@+id/btnAddNewCard"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/custom_button_shape"
+                android:textAllCaps="true"
+                android:text="@string/text_button_add_card"/>
+
+
+            <com.munye.component.MyFontButton
+                android:visibility="gone"
+                android:id="@+id/btnSkipCard"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:background="@drawable/custom_button_shape"
+                android:textAllCaps="true"
+                android:text="@string/text_button_skip"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

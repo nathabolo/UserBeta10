@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@mipmap/bkk"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <LinearLayout
+            android:id="@+id/llToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.munye.component.MyFontTextView
+                android:id="@+id/tvToolBarTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tool_bar_title_size" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <Spinner
+        android:id="@+id/service_spinner"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary" />
+
+</android.support.v7.widget.Toolbar>
+
+
